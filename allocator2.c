@@ -1,5 +1,6 @@
-// Still poor memory usage with small allocations, like single chars or shorts. At least in the case of a single char it would be allocated as 8 bytes within the block...YIKES!
-//  (Though most likely you would allocate several characters to make up a string. Short strings would still have a pretty high penalty!!!)
+// Still poor memory usage with small allocations, like single chars or shorts. At least in the case of a single char 
+// it would be allocated as 8 bytes within the block...YIKES!
+// (Though most likely you would allocate several characters to make up a string. Short strings would still have a pretty high penalty!!!)
 
 #include <stdio.h>
 #include <stdlib.h>
