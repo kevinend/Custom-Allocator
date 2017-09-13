@@ -29,7 +29,7 @@ initial_pool_allocate( Memory_Pool *pool, size_t pool_size_in_bytes )
 		exit  ( EXIT_FAILURE );
 	}
 
-	pool->current	   		= pool->start;
+	pool->current	   	= pool->start;
 	pool->allocated_bytes   = 0;
 	pool->unallocated_bytes = pool_size_in_bytes; 
 
@@ -103,7 +103,6 @@ pool_stats( Memory_Pool *pool )
 	fprintf( stdout, "\tpool->allocated_bytes == %lld\n", pool->allocated_bytes );
 	fprintf( stdout, "\tpool->unallocated_bytes == %lld\n", pool->unallocated_bytes );
 	fprintf( stdout, "\ttotal allocation in bytes == %lld\n\n", pool->allocated_bytes + pool->unallocated_bytes );
-
 
 	return;
 }
